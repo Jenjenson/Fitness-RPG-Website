@@ -1,0 +1,101 @@
+:root {
+    --custom-color: #2f3136; /* Primary Dark Gray */
+    --custom-color-darker: #202225; /* Darker Gray */
+    --custom-color-light: #40444b; /* Lighter Gray */
+    --custom-color-rgb: 47, 49, 54; /* Primary Gray RGB */
+    --custom-color-light-rgb: 64, 68, 75; /* Lighter Gray RGB */
+    --custom-text-color: #ffffff; /* White Text */
+    --custom-bg-color: #2c2f33; /* Main Background */
+    --custom-bg-secondary: #23272a; /* Secondary Background */
+    --custom-border-color: #4f545c; /* Subtle Border Color */
+}
+
+.accordion {
+    --bs-accordion-btn-focus-border-color: var(--custom-color-light);
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem var(--custom-color-light);
+    --bs-accordion-active-bg: var(--custom-color-light);
+    --bs-accordion-active-color: var(--custom-color-darker);
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--custom-color);
+    --bs-btn-border-color: var(--custom-color);
+    --bs-btn-hover-bg: var(--custom-color-darker);
+    --bs-btn-hover-border-color: var(--custom-color-darker);
+    --bs-btn-active-bg: var(--custom-color-light);
+    --bs-btn-active-border-color: var(--custom-color-light);
+    --bs-btn-disabled-bg: var(--custom-color-darker);
+    --bs-btn-disabled-border-color: var(--custom-color-darker);
+}
+
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: var(--custom-color-darker) !important;
+}
+
+.table {
+    background-color: var(--custom-bg-secondary); /* Dark table background */
+    color: var(--custom-text-color); /* White text */
+    border-radius: 8px; /* Rounded corners */
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%; /* Ensure full width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.table th,
+.table td {
+    background-color: var(--custom-color-light); /* Dark table background */
+    border-color: var(--custom-border-color);
+    color: var(--custom-text-color);
+    padding: 12px 15px; /* Add padding for readability */
+    text-align: left; /* Align text to the left */
+    border-radius: 4px; /* Slight rounded corners for cells */
+}
+
+/* Header styling */
+.table th {
+    background-color: var(--custom-color-darker); /* Darker header */
+    font-weight: bold;
+}
+
+/* Striped rows for better readability */
+.table tbody tr:nth-child(odd) {
+    background-color: var(--custom-bg-color);
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: var(--custom-color-light);
+}
+
+/* Hover effect for rows */
+.table tbody tr:hover {
+    background-color: var(--custom-color-darker); /* Darken on hover */
+    cursor: pointer;
+}
+
+/* Table primary class styling */
+.table-primary {
+    background-color: var(--custom-color-light); /* Slightly lighter gray for header */
+    color: var(--custom-text-color);
+    border-color: var(--custom-border-color);
+}
+
+/* Navbar and footer styling */
+.navbar {
+    background-color: var(--custom-color-darker) !important; /* Black-like navbar */
+    color: var(--custom-text-color);
+}
+
+footer {
+    background-color: var(--custom-bg-secondary); /* Dark footer */
+    color: var(--custom-text-color);
+}
+
+.modal-content {
+    color: #000; /* Black text for modal content */
+}
+
+.text-muted {
+    color: white !important;
+}

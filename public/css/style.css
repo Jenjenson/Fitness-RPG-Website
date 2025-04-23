@@ -1,0 +1,65 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--custom-bg-color); /* Discord Dark Background */
+    color: var(--custom-text-color); /* White Text */
+}
+
+main {
+    min-height: calc(100vh - 56px - 56px);
+}
+
+/* Card Styling for Stats */
+.card {
+    background-color: var(--custom-bg-secondary); /* Matches dark background theme */
+    color: var(--custom-text-color); /* White text for cards */
+    border: 1px solid var(--custom-border-color); /* Subtle border */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+}
+
+.table {
+    border-spacing: 0; /* Aligns table rows and columns without extra gaps */
+}
+
+footer {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.card-header i {
+  display: block;
+  margin: 0 auto; /* Centers the icon */
+}
+.card-header {
+  padding: 20px 0; /* Adds some space around the icon */
+}
+.fa-4x {
+  font-size: 3rem; /* Makes the icon larger */
+}
+/* Make the card smaller horizontally */
+.why-exercise-card {
+  max-width: 300px; /* Set a fixed width for the cards */
+  height: 300px;
+  margin: 0 auto; /* Center the cards */
+}
+
+.toastify.success-toast .toast-close {
+  position: absolute;
+  top: 10px; /* Adjust this value to fine-tune the vertical position */
+  right: 10px; /* Adjust this value to fine-tune the horizontal position */
+  font-size: 18px; /* Optional: Adjust the size of the close icon */
+}
+
+#ratingStars .star {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ccc;
+  margin-right: 5px;
+  transition: color 0.2s;
+}
+#ratingStars .star.hovered {
+  color: #FFD700; /* Gold when hovering */
+}
+#ratingStars .star.selected {
+  color: #FFD700; /* Gold when selected */
+}

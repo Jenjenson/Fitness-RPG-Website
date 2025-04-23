@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/color.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/52c650dcb3.js" crossorigin="anonymous"></script>
+    <title>Items</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <i class="fas fa-home fa-lg text-white"></i>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="challenges.html">Challenges</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="items.html">Items</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="alliances.html">Alliance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="monsters.html">Monsters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="users.html">Users</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quest.html">Quests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="crafting.html">Crafting</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="trades.html">Trades</a>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a id="profileButton" href="/profile.html" class="nav-link">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a id="logoutButton" href="#" class="nav-link">Logout</a>
+            </li>
+            <li class="nav-item">
+              <a id="loginButton" href="/login.html" class="nav-link">Login</a>
+            </li>
+            <li>
+              <div class="btn-nav">
+                <a id="registerButton" class="btn text-bg-dark btn-small navbar-btn" href="/register.html">Register!</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <main class="py-4">
+      <div class="container">
+        <!-- Current Equipment Section -->
+        <div class="text-center mb-5">
+          <h2>Your Current Equipment</h2>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 id="equipped-weapon-name">Weapon: None</h5>
+                  <p id="equipped-weapon-stats">No weapon equipped</p>
+                  <div id="equipped-weapon-unequip"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 id="equipped-armor-name">Armor: None</h5>
+                  <p id="equipped-armor-stats">No armor equipped</p>
+                  <div id="equipped-armor-unequip"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 id="equipped-shield-name">Shield: None</h5>
+                  <p id="equipped-shield-stats">No shield equipped</p>
+                  <div id="equipped-shield-unequip"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 id="equipped-accessory-name">Accessory: None</h5>
+                  <p id="equipped-accessory-stats">No accessory equipped</p>
+                  <div id="equipped-accessory-unequip"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- User's Inventory Section -->
+        <div class="text-center mb-4">
+          <h2>Your Inventory</h2>
+        </div>
+        <div class="row" id="inventory-container">
+          <!-- Cards will be dynamically inserted here by showInventory.js -->
+        </div>
+      </div>
+    </main>
+    
+    <footer class="mt-auto py-3 bg-primary text-bg-primary text-center">
+      <p class="m-0 py-0 px-4">
+        Created by Goh Jenson for Educational Purposes. Artworks or content are from the creator's API or public resources.
+      </p>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="js/queryCmds.js" type="text/javascript"></script>
+    <script src="js/showInventory.js" type="text/javascript"></script>
+    <script src="js/getCurrentURL.js" type="text/javascript"></script>
+    <script src="js/userNavbarToggle.js" type="text/javascript"></script>
+  </body>
+</html>
