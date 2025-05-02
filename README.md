@@ -1,5 +1,5 @@
 # Fitness RPG Website
-#### Video Demo:  (https://www.youtube.com/watch?v=3m0_QuP2fo0&feature=youtu.be)
+#### Video Demo:  https://www.youtube.com/watch?v=3m0_QuP2fo0
 #### Description: Website to promote fitness, contains some rpg elements
 ---
 ## Folder Structure
